@@ -1,0 +1,42 @@
+.tweetpanel-app-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 80px 400px 1fr;
+  grid-template-rows: 60px 1fr 80px;
+}
+
+.feature {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background-color: #031b4e;
+  color: #fff;
+  padding: 16px;
+}
+
+.sidebar {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  border-right: 1px solid #eee;
+  overflow-y: auto;
+}
+
+.header {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 0 20px;
+  background: #fff;
+  z-index: 200;
+  border-bottom: 1px solid #eee;
+}
+
+.messages {
+  grid-column: 3;
+  grid-row: 2;
+  padding: 16px;
+}
+
+.reply {
+  grid-column: 3;
+  grid-row: 3;
+  padding: 16px;
+}
